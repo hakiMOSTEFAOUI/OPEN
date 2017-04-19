@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.suresnes.opendata.dto.Arrete" table="arretes">
+        <id name="number" type="int">
+            <column name="Numero" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="typeAutorisation" type="string">
+            <column name="typeAutorisation" length="1000" not-null="true" />
+        </property>
+        <property name="PetititionDate" type="date">
+            <column name="DatePetition" length="1000" not-null="true" />
+        </property>
+        <property name="additionnalInfoTypeAutorisation" type="string">
+            <column name="ComplInfoTypeAutorisation" length="1000" not-null="true" />
+        </property>
+        <property name="startDateAutorisation" type="date">
+            <column name="DateDebut" length="1000" not-null="true" />
+        </property>
+        <property name="endDateAutorisation" type="date">
+            <column name="DateFin" length="1000" not-null="true" />
+        </property>
+        <property name="tarif" type="double">
+            <column name="Tarif" length="1000" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="Titre" length="500" not-null="true" />
+        </property>
+        <property name="topValid" type="int">
+            <column name="TopValide " length="1" not-null="true" />
+        </property>
+        
+        
+    </class>
+</hibernate-mapping>

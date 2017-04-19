@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+		<title>Mairie de SURESNES</title>
+		
+		<link rel="shortcut icon" href="../favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_form.css" />
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/list.js"></script>
+		  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ 		  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 		  <script src="http://listjs.com/assets/javascripts/list.min.js"></script>
+ 		
+		<script type="text/javascript">
+    $(document).ready(function() {
+        $('.datepick').datepicker({ dateFormat: "yy-mm-dd"});
+    });
+</script>
+
+
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li>
+									
+									<a class="gn-icon gn-icon-archive">Nouvel Arrêté</a>
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-download">Nouvelle Autorisation</a>
+									
+								</li>
+								
+								<li><a class="gn-icon gn-icon-help">Insérer une loi</a></li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Créer un article</a>
+									
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Ajouter un destinataire mails</a>
+									
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Gérer les tarifications</a>
+									
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Gérer les types d'autorisation</a>
+									
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Recherche</a>
+									
+								</li>
+								
+<li>
+									<a class="gn-icon gn-icon-archive">Registre des arrêtés</a>
+									
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Registre des Autorisations</a>
+									
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a href="http://tympanus.net/codrops">Codrops</a></li>
+				<li><a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/HeaderEffects/"><span>Previous Demo</span></a></li>
+				
+				<li><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16030"><span>Back to the Codrops Article</span></a></li>
+			</ul>
+			<header>
+			
+			
+		
+            
+            <form id="send" action="">
+            	<p>
+                <label for="website">Titre</label>
+                <input id="website" type="text" name="website" value="" />
+                </p>
+                <p>
+
+                <label for="name">Numéro d'autorisation</label>
+                <input id="num" type="text" name="name" value="1234443" />
+                </p>
+                
+                <p>
+                <label for="company">Type d'autorisation</label>
+                <input id="type" list="age" />
+                
+				<datalist id="age">
+				  <option value="bébé"/>
+				  <option value="enfant"/>
+				  <option value="adolescent"/>
+				  <option value="adulte"/>
+				  <option value="papi ou mami"/>
+				</datalist>
+                </p>
+                
+ 
+               
+                <p>
+                <label for="company">Type d'autorisation : Complément d'informations</label>
+                <textarea name="comment" form="usrform">Enter text here...</textarea>
+                </p>
+                
+                <p>
+
+                <label for="email">Date de Pétition</label>
+                <input id="petition" class="datepick"/>
+                </p>
+                
+                <p>
+
+                <label for="email">Date de début d'autorisation</label>
+                <input id="petition" class="datepick1"/>
+                </p>
+                
+                <p>
+
+                <label for="email">Date de fin d'autorisation</label>
+                <input id="petition" class="datepick2"/>
+                </p>
+                
+                <p>
+                <label for="website">Tarif</label>
+                <input id="Tarif" type="text" name="website" value="" />
+                </p>
+                
+             
+ 
+       
+              
+
+               
+                <p>
+
+                <button id="submit" type="submit">Submit</button>
+                </p>
+                
+            </form>
+            
+		
+			
+			
+				</header> 
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.suresnes.opendata.dto.Rue" table="Rues">
+        <id name="Id" type="int">
+            <column name="Id" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="rue" type="string">
+            <column name="Rue" length="100" not-null="true" />
+        </property>
+        <property name="startNumber" type="int">
+            <column name="StartNumber" length="100" not-null="true" />
+        </property>
+        <property name="endNumber" type="int">
+            <column name="EndNumber" length="100" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

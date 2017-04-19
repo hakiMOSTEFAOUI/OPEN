@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.suresnes.opendata.dto.Societe" table="Societes">
+        <id name="siret" type="int">
+            <column name="siret" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nom" type="string">
+            <column name="Nom" length="50" not-null="true" />
+        </property>
+        <property name="adresse" type="string">
+            <column name="Adresse" length="200" not-null="true" />
+        </property>
+        <property name="tel" type="string">
+            <column name="Tel" length="20" not-null="true" />
+        </property>
+        <property name="representant" type="string">
+            <column name="Representant" length="20" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
